@@ -7,12 +7,20 @@ def subtract(x, y)
 end
 
 def sum(x)
-	return 0 if x.empty? == true
-	sum = 0
-	x.each {|x| sum += x}
-	return sum
+	#Injects takes an argument which in this case
+	#is 0. 0 is used as the result the first time 
+	#it runs for each element in the array. And
+	#then the result of result + element will be used
+	#the next time it runs as the argument.
+	x.inject(0) {|result, element| result + element}
 
-	#First pass
+	#####Second pass
+	# return 0 if x.empty? == true
+	# sum = 0
+	# x.each {|x| sum += x}
+	# return sum
+
+	#####First pass
 	# if x.count == 1
 	# 		return x[0]
 	# elsif x.count == 2

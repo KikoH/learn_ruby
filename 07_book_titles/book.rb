@@ -17,3 +17,4 @@ class Book
 		@title = capitalize(string)
 	end
 end
+
