@@ -10,6 +10,12 @@ def repeat(x, num = 2)
   num.times.collect { x }.join(' ')
 end
 
+s = "Hello"
+
+s[2..-1]
+
+
+
 def start_of_word(x, n)
 	if n == 1 then x[0..0]
 	elsif n == 2 then x[0..1]
@@ -20,6 +26,8 @@ end
 def first_word(x)
 	x.split(' ').first
 end
+
+string = ("a", "b", "c", "d")
 
 def titleize(string)
   lowercase_words = %w{and or the over}
