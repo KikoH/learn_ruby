@@ -11,7 +11,7 @@ def sum(x)
 	#is 0. 0 is used as the result the first time 
 	#it runs for each element in the array. And
 	#then the result of result + element will be used
-	#the next time it runs as the argument.
+	#the next time it runs as the argument...
 	x.inject(0) {|result, element| result + element}
 
 	#####Second pass
